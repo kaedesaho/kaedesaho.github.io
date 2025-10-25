@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kaede</title>
+        <link rel="stylesheet" href="static/style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#footer">Contact</a>
+           
+          </nav>
+        </header>
+      
+        <main class="main-content">
+          <section id="home" class="home-section">
+            <div class="home-content">
+              <div class="home-text">
+                <h1>Kaede</h1>
+                <div class="description">
+                  Computer Science & Data Science student <br>
+                  Passionate about <strong>Machine Learning</strong> and <br>
+                  <strong>AI applications</strong>, building <strong>real-world projects</strong>.
+                </div>
+                
+              </div>
+              <div class="home-image"> 
+                <img src="static/images/me.PNG" alt="Profile Photo" class="pfp-img">
+              </div>
+            </div>
+          </section>
+          <section id="projects">
+                <h1>Projects</h1>
+
+                  <div class="project-container">
+                    <div class="project" >
+
+                      <div class="project-card">
+                        <div class='project-text'>
+                          <h3>Predicting Part of Speech and Next Word in Scottish Gaelic</h3>
+                          <h4>Overview:</h4>
+                          <p>Developed two neural network models for Scottish Gaelic, a low-resource language, in collaboration with Edinburgh Napier University.</p>
+
+                          <h4>Part-of-Speech Tagger</h4> 
+                          <ul>
+                            <li>Built a BiLSTM-based neural network to tag 87K tokens from the ARCOSG dataset</li>
+                            <li>Achieved 89% accuracy across 223 unique PoS tags</li>
+                            <li>Visualized architecture with input, hidden, and output layers</li>
+                          </ul>
+
+                          <h4>Next-Word Prediction (Small Language Model)</h4>
+                          <ul>
+                            <li>Preprocessed and trained on 1M tokens using an LSTM model from the Institutional Books Corpus</li>
+                            <li>Predicted next words in Gaelic phrases</li>
+                          </ul>
+
+                          <h4>Tools:</h4>
+                          <p>PyTorch, FastText, spaCy, Jupyter Notebook, Python</p>
+
+                          <h4>Future Plans:</h4>
+                          <ul>
+                            <li>Scale training data from 1M to 40M tokens for improved predictions</li>
+                            <li>Integrate the PoS model into spaCy for open-source usage</li>
+                          </ul>
+
+                        </div>
+                        <div class="project-image">
+                          <img src="static/images/gla_diagram.png" alt="Image">
+                        </div>
+                      </div>
+                
+            
+                    <div class="project-card">
+                      <div class="compass-image">
+                        <img src="static/images/compass.png" alt="Image">
+                      </div>
+                      <div class='project-text'>
+                        <h3>CompassQA – AI-powered Student Policy Assistant</h3>
+                        <p>Built a RAG system that enables students to ask questions about Cornell College’s student policies, including academic, residential, and financial rules.</p>
+                        <h4>Tools:</h4>
+                        <p>LangChain, Ollama, Streamlit</p>
+                      </div>
+                    </div>
+
+                      </div>
+                      
+          </section>
+            <section id="skills">
+              <h2>Skills</h2>
+                <h3>Programming Languages:</h3>
+                <p>Python, R, Swift, SQL (MySQL), HTML/CSS</p>
+
+                <h3>ML & NLP:</h3>
+                <p>PyTorch, Keras, scikit-learn, spaCy, LangChain, Ollama, TensorFlow, Pandas, NumPy, matplotlib</p>
+              
+                <h3>Developer Tools:</h3>
+                <p>Git, Xcode, RStudio, VS Code, Tableau</p>
+                
+                <h3>Operating Systems:</h3>
+                <p>macOS, Windows</p>
+
+            
+             <h2>Certifications</h2>
+                <p>Machine Learning with Python</p>
+                <p>Introduction to Deep Learning & Neural Networks with Keras</p>
+                <p>Generative AI and LLMs: Architecture and Data Preparation</p>
+                <p>Gen AI Foundational Models for NLP & Language Understanding</p>
+                <p>Programming Fundamentals in Swift by Meta</p>
+                <p>Introduction to iOS Mobile Application Development by Meta</p>
+              </div>
+
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="icons">
+                <a class="icon" href="mailto:kaede.saho.1214@gmail.com">
+                  <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="email" />
+                </a>
+                <a class="icon" href="https://github.com/kaedesaho">
+                  <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="github" />
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/kaede-saho">
+                  <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
+                </a>
+            </div>
+        </footer>
+      </body>
+    </html>
+      
