@@ -1,138 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kaede</title>
-        <link rel="stylesheet" href="static/style2.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaede</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </div>    
 
-      </head>
-      <body>
-        <header>
-          <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#footer">Contact</a>
-           
-          </nav>
-        </header>
+      <div class="nav-bottom">
+        <div class="nav-icons">
+          <a class="icon" href="mailto:kaede.saho@gmail.com">
+            <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="email" />
+          </a>
+          <a class="icon" href="https://github.com/kaedesaho">
+            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="github" />
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/kaede-saho">
+            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
+          </a>
+        </div>
+      </div>
+    </nav>
       
-        <main class="main-content">
-          <section id="home" class="home-section">
-            <div class="home-content">
-              <div class="home-text">
-                <h1>Kaede</h1>
-                <div class="description">
-                  Computer Science & Data Science student <br>
-                  Passionate about <strong>Machine Learning</strong> and <br>
-                  <strong>AI applications</strong>, building <strong>real-world projects</strong>.
-                </div>
-                
-              </div>
-              <div class="home-image"> 
-                <img src="static/images/me.PNG" alt="Profile Photo" class="pfp-img">
-              </div>
-            </div>
-          </section>
-          <section id="projects">
-                <h1>Projects</h1>
+    <main>
+      <section id="home" class="home-section">
 
-                  <div class="project-container">
-                    <div class="project" >
+        <div class="home-text">
+          <h1>Hi, I'm <span class="home-name-accent">Kaede Saho</span></h1>
+          <p class="typed-line">I'm a <span class="typed-text"></span><span class="typed-cursor">|</span></p>
+          <div class="description">
+            <p>Passionate about <strong>Machine Learning</strong> and <strong>AI applications</strong> — building real-world projects that matter.</p>
+          </div>
+          <a class="resume-btn" href="static/images/Resume_03-18-.pdf" target="_blank">View Resume</a>
+        </div>
 
-                      <div class="project-card">
-                        <div class='project-text'>
-                          <h3>Predicting Part of Speech and Next Word in Scottish Gaelic</h3>
-                          <h4>Overview:</h4>
-                          <p>Developed two neural network models for Scottish Gaelic, a low-resource language, in collaboration with Edinburgh Napier University.</p>
+        <div class="home-image"> 
+          <img src="static/images/photo.JPG" alt="Profile Photo" class="pfp-img">
+        </div>
+          
+      </section>
 
-                          <h4>Part-of-Speech Tagger</h4> 
-                          <ul>
-                            <li>Built a BiLSTM-based neural network to tag 87K tokens from the ARCOSG dataset</li>
-                            <li>Achieved 89% accuracy across 223 unique PoS tags</li>
-                            <li>Visualized architecture with input, hidden, and output layers</li>
-                          </ul>
+    <section id="research" class="research-section">
+      <h1 class="section-title">Research</h1>
 
-                          <h4>Next-Word Prediction (Small Language Model)</h4>
-                          <ul>
-                            <li>Preprocessed and trained on 1M tokens using an LSTM model from the Institutional Books Corpus</li>
-                            <li>Predicted next words in Gaelic phrases</li>
-                          </ul>
+      <div class="project-card">
+        <div class='project-text'>
+          <h3>Predicting Part of Speech and Next Word in Scottish Gaelic</h3>
+            <p class="project-tagline">Developed two neural network models for Scottish Gaelic, a low-resource language, in collaboration with Edinburgh Napier University.</p>
+          <h4>Part-of-Speech Tagger</h4> 
+            <ul>
+              <li>Built a BiLSTM-based neural network to tag 87K tokens from the ARCOSG dataset</li>
+              <li>Achieved 89% accuracy across 223 unique PoS tags</li>
+              <li>Visualized architecture with input, hidden, and output layers</li>
+            </ul>
 
-                          <h4>Tools:</h4>
-                          <p>PyTorch, FastText, spaCy, Jupyter Notebook, Python</p>
+          <h4>Next-Word Prediction (Small Language Model)</h4>
+            <ul>
+              <li>Preprocessed and trained on 1M tokens using an LSTM model from the Institutional Books Corpus</li>
+              <li>Predicted next words in Gaelic phrases</li>
+            </ul>
+          <div class="tech-badges">
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">FastText</span>
+            <span class="tech-badge">spaCy</span>
+            <span class="tech-badge">Jupyter Notebook</span>
+            <span class="tech-badge">Python</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="static/images/gla_diagram.png" alt="Image">
+        </div>
+      </div>
+    </section>
 
-                          <h4>Future Plans:</h4>
-                          <ul>
-                            <li>Scale training data from 1M to 40M tokens for improved predictions</li>
-                            <li>Integrate the PoS model into spaCy for open-source usage</li>
-                          </ul>
+    <section id="projects" class="projects-section">
+      <h1 class="section-title">Projects</h1>
 
-                        </div>
-                        <div class="project-image">
-                          <img src="static/images/gla_diagram.png" alt="Image">
-                        </div>
-                      </div>
-                
-            
-                    <div class="project-card">
-                      <div class="compass-image">
-                        <img src="static/images/compass.png" alt="Image">
-                      </div>
-                      <div class='project-text'>
-                        <h3>CompassQA – AI-powered Student Policy Assistant</h3>
-                        <p>Built a RAG system that enables students to ask questions about Cornell College’s student policies, including academic, residential, and financial rules.</p>
-                        <h4>Tools:</h4>
-                        <p>LangChain, Ollama, Streamlit</p>
-                      </div>
-                    </div>
 
-                      </div>
-                      
-          </section>
-            <section id="skills">
-              <h2>Skills</h2>
-                <h3>Programming Languages:</h3>
-                <p>Python, R, Swift, SQL (MySQL), HTML/CSS</p>
+      <div class="project-card">
+        <div class="project-text">
+          <div class="card-title-row">
+            <h3>SprintBoard — Project Management App</h3>
+            <a class="project-github" href="https://github.com/kaedesaho/sprintboard" target="_blank">
+              <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" />
+            </a>
+          </div>
+          <p class="project-tagline">Full-stack agile project management tool with sprint planning, task tracking, and role-based collaboration.</p>
+          <p>Designed and implemented a RESTful backend and interactive frontend. </p>
+          <p>Built features like drag-and-drop task management, dependency handling, and role-based access control.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="static/images/sprintboard.png" alt="SprintBoard screenshot" class="lightbox-trigger" />
+        </div>
+      </div>
 
-                <h3>ML & NLP:</h3>
-                <p>PyTorch, Keras, scikit-learn, spaCy, LangChain, Ollama, TensorFlow, Pandas, NumPy, matplotlib</p>
-              
-                <h3>Developer Tools:</h3>
-                <p>Git, Xcode, RStudio, VS Code, Tableau</p>
-                
-                <h3>Operating Systems:</h3>
-                <p>macOS, Windows</p>
+      <div class="project-card-row">
+        <div class="project-card-half">
+          <div class="card-title-row">
+            <h3 class="project-card-half-title">CompassQA – RAG Policy Q&A System</h3>
+            <a class="project-github" href="https://github.com/kaedesaho/compass-rag" target="_blank">
+              <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" />
+            </a>
+          </div>
+          <p>Built a RAG system that enables students to ask questions about Cornell College’s student policies, including academic, residential, and financial rules.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">LangChain</span>
+            <span class="tech-badge">Ollama</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+        </div>
+        <div class="project-card-half">
+          <h3 class="project-card-half-title">Coding Interview Assist AI</h3>
+          <p>Built an AI-powered platform that simulates coding interviews and provides automated feedback on problem-solving and communication.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Ollama</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            
-             <h2>Certifications</h2>
-                <p>Machine Learning with Python</p>
-                <p>Introduction to Deep Learning & Neural Networks with Keras</p>
-                <p>Generative AI and LLMs: Architecture and Data Preparation</p>
-                <p>Gen AI Foundational Models for NLP & Language Understanding</p>
-                <p>Programming Fundamentals in Swift by Meta</p>
-                <p>Introduction to iOS Mobile Application Development by Meta</p>
-              </div>
 
-            </section>
-        </main>
-        <footer id="footer">
-            <div class="icons">
-                <a class="icon" href="mailto:kaede.saho.1214@gmail.com">
-                  <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="email" />
-                </a>
-                <a class="icon" href="https://github.com/kaedesaho">
-                  <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="github" />
-                </a>
-                <a class="icon" href="https://www.linkedin.com/in/kaede-saho">
-                  <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="linkedin" />
-                </a>
-            </div>
-        </footer>
-      </body>
-    </html>
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">Swift</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">HTML</span>
+            <span class="skill-chip">CSS</span>
+            <span class="skill-chip">R</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>ML & NLP</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">PyTorch</span>
+            <span class="skill-chip">Keras</span>
+            <span class="skill-chip">scikit-learn</span>
+            <span class="skill-chip">spaCy</span>
+            <span class="skill-chip">LangChain</span>
+            <span class="skill-chip">Ollama</span>
+            <span class="skill-chip">TensorFlow</span>
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">NumPy</span>
+            <span class="skill-chip">matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Developer Tools</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">Xcode</span>
+            <span class="skill-chip">RStudio</span>
+            <span class="skill-chip">VS Code</span>
+            <span class="skill-chip">Tableau</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Operating Systems</h3>
+          <div class="skill-chips">
+            <span class="skill-chip">macOS</span>
+            <span class="skill-chip">Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list">
+        <li>Machine Learning with Python</li>
+        <li>Introduction to Deep Learning & Neural Networks with Keras</li>
+        <li>Generative AI and LLMs: Architecture and Data Preparation</li>
+        <li>Gen AI Foundational Models for NLP & Language Understanding</li>
+        <li>Programming Fundamentals in Swift by Meta</li>
+        <li>Introduction to iOS Mobile Application Development by Meta</li>
+      </ul>
+    </section>
+  </main>
+<div id="lightbox" class="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <img class="lightbox-img" src="" alt="" />
+  </div>
+
+  <footer>
+      <p>Designed & built by Kaede Saho</p>
+  </footer>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') lightbox.classList.remove('active');
+    });
+  </script>
+
+  <script>
+    const roles = ["CS & Data Science Student"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+    const typedText = document.querySelector('.typed-text');
+
+    function type() {
+      const current = roles[roleIndex];
+      if (!deleting) {
+        typedText.textContent = current.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === current.length) {
+          setTimeout(() => { deleting = true; type(); }, 1800);
+          return;
+        }
+      } else {
+        typedText.textContent = current.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+      setTimeout(type, deleting ? 50 : 80);
+    }
+
+    type();
+  </script>
+  </body>
+</html>
       
