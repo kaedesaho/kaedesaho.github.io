@@ -172,7 +172,6 @@ main {
 
 .home-name-accent {
     color: var(--rose);
-    font-style: italic;
 }
 
 .typed-line {
@@ -289,6 +288,63 @@ main {
     transform: translateY(0);
 }
 
+/* ── Timeline ─────────────────────────────────────────── */
+
+.timeline-item {
+    display: flex;
+    gap: 28px;
+}
+
+.timeline-marker {
+    flex-shrink: 0;
+    width: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--rose);
+    border: 2px solid var(--navy);
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.timeline-line {
+    width: 1.5px;
+    flex: 1;
+    margin-top: 4px;
+    background-color: var(--border);
+}
+
+.timeline-item:last-child .timeline-line {
+    display: none;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-bottom: 40px;
+    min-width: 0;
+}
+
+.timeline-item:last-child .timeline-content {
+    padding-bottom: 0;
+}
+
+.timeline-date {
+    display: block;
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 14px;
+}
+
 /* ── Project Cards ────────────────────────────────────── */
 
 .project-card {
@@ -303,6 +359,22 @@ main {
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-content .project-card {
+    margin-bottom: 0;
+    padding: 8px 0 8px 28px;
+    background: none;
+    border: none;
+    border-left: 2px solid var(--rose);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.timeline-content .project-card:hover {
+    box-shadow: none;
+    transform: none;
+    border-left-color: var(--navy);
 }
 
 .project-card:hover {
@@ -333,6 +405,10 @@ main {
     color: var(--navy);
     margin-top: 18px;
     margin-bottom: 6px;
+}
+
+.project-text .tech-badges + h4 {
+    margin-top: 26px;
 }
 
 .project-text p {
@@ -638,6 +714,14 @@ footer {
 
     .project-image {
         width: 100%;
+    }
+
+    .timeline-item {
+        gap: 16px;
+    }
+
+    .timeline-content {
+        padding-bottom: 32px;
     }
 
     .project-card-row {
